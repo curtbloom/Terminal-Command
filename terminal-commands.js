@@ -19,7 +19,7 @@ module.exports.touch = () => {
 
 module.exports.mkdir = () => {
   fs.mkdir('./terminal-commands', (err, dir) => {
-        if (err.code != 'EEXIST') throw err;
+        if (err.code != 'EXIST') throw err;
         console.log(`directory created`)
     });
 };
